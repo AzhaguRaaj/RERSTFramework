@@ -1,0 +1,115 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "location": {
+        "lat": -10.12324,
+        "lng": -13.2344
+    },
+    "accuracy": 50,
+    "name": "Raaj",
+    "phone_number": "+91 (92123)900000",
+    "address": "Bengaluru",
+    "types": [
+        "Test Park",
+        "New Test"
+    ],
+    "website": "www.Test.com",
+    "language": "Tamil"
+}
+HTTP/1.1 200 OK
+Date: Sat, 01 Aug 2020 14:55:16 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "25f09a3ea65f832b0135835b2d92b29d",
+    "scope": "APP",
+    "reference": "a90daf7921bf9cb5dbe34b84e2aad214a90daf7921bf9cb5dbe34b84e2aad214",
+    "id": "a90daf7921bf9cb5dbe34b84e2aad214"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=25f09a3ea65f832b0135835b2d92b29d
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=25f09a3ea65f832b0135835b2d92b29d
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sat, 01 Aug 2020 14:55:17 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 220
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "-10.12324",
+        "longitude": "-13.2344"
+    },
+    "accuracy": "50",
+    "name": "Raaj",
+    "phone_number": "+91 (92123)900000",
+    "address": "Bengaluru",
+    "types": "Test Park,New Test",
+    "website": "www.Test.com",
+    "language": "Tamil"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "place_id": "25f09a3ea65f832b0135835b2d92b29d"
+}
+HTTP/1.1 200 OK
+Date: Sat, 01 Aug 2020 14:55:18 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 15
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK"
+}
